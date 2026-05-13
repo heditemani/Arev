@@ -1,0 +1,47 @@
+.wrapper { display: flex; background: #f8fafc; min-height: 100vh; }
+.mainContent { flex: 1; display: flex; flex-direction: column; }
+
+.topbar {
+  background: white; padding: 12px 25px; display: flex; align-items: center;
+  justify-content: space-between; border-bottom: 1px solid #e2e8f0;
+}
+.searchSection { display: flex; align-items: center; gap: 30px; }
+.searchBar { display: flex; align-items: center; background: #f1f5f9; padding: 8px 15px; border-radius: 20px; width: 350px; }
+.searchBar input { border: none; background: transparent; outline: none; margin-left: 10px; width: 100%; }
+
+.layoutBody { display: flex; flex: 1; overflow: hidden; }
+
+/* Catalogue Styles */
+.catalogue { flex: 1; padding: 25px; overflow-y: auto; }
+.categories { display: flex; gap: 12px; margin-bottom: 30px; }
+.catBtn { padding: 8px 18px; border-radius: 20px; border: none; background: #e2e8f0; color: #64748b; cursor: pointer; }
+.activeCat { padding: 8px 18px; border-radius: 20px; border: none; background: #00b67a; color: white; }
+
+.productGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+.productCard { background: white; border-radius: 15px; overflow: hidden; border: 1px solid #e2e8f0; }
+.productImg { height: 140px; }
+.productInfo { padding: 12px; }
+.namePrice { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.namePrice h4 { margin: 0; font-size: 0.9rem; flex: 1; }
+.price { color: #00b67a; font-weight: 700; font-size: 0.9rem; }
+.productInfo p { font-size: 0.75rem; color: #94a3b8; margin: 0; }
+
+/* Order Sidebar Styles */
+.orderSidebar { width: 380px; background: white; border-left: 1px solid #e2e8f0; display: flex; flex-direction: column; }
+.orderHeader { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; }
+.tableBadge { background: #006b44; color: white; padding: 5px 12px; border-radius: 15px; font-weight: bold; font-size: 0.8rem; }
+
+.cartList { flex: 1; padding: 15px; overflow-y: auto; }
+.cartItem { display: flex; gap: 15px; margin-bottom: 15px; padding: 12px; border: 1px solid #f1f5f9; border-radius: 10px; }
+.qtyBadge { background: #f1f5f9; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 5px; font-weight: bold; color: #006b44; }
+.itemDetails { flex: 1; }
+.itemNameRow { display: flex; justify-content: space-between; font-weight: 600; font-size: 0.9rem; }
+.itemNote { display: block; font-size: 0.75rem; color: #94a3b8; }
+.retirerBtn { border: none; background: transparent; color: #ef4444; font-size: 0.7rem; cursor: pointer; padding: 0; margin-top: 5px; }
+
+.orderFooter { padding: 20px; border-top: 1px solid #f1f5f9; }
+.totalRow { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; color: #64748b; }
+.finalTotal { display: flex; justify-content: space-between; font-size: 1.4rem; color: #1e293b; margin: 15px 0; }
+.actionBtns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.validBtn { padding: 12px; border-radius: 10px; border: 1px solid #00b67a; background: white; color: #00b67a; font-weight: 600; }
+.payBtn { padding: 12px; border-radius: 10px; border: none; background: #00b67a; color: white; font-weight: 600; }

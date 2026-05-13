@@ -1,0 +1,42 @@
+.wrapper { display: flex; background: #f0f4f8; min-height: 100vh; font-family: sans-serif; }
+.main { flex: 1; position: relative; padding-bottom: 80px; }
+
+.topbar {
+  background: white; padding: 15px 30px; display: flex; align-items: center;
+  justify-content: space-between; border-bottom: 1px solid #e2e8f0;
+}
+.searchContainer { display: flex; align-items: center; background: #f1f5f9; padding: 8px 15px; border-radius: 20px; width: 300px; }
+.searchContainer input { border: none; background: transparent; outline: none; margin-left: 10px; width: 100%; }
+
+.topActions { display: flex; align-items: center; gap: 20px; }
+.userInfo { text-align: right; }
+.userInfo p { margin: 0; font-weight: 600; font-size: 0.9rem; }
+.userInfo span { font-size: 0.75rem; color: #64748b; }
+.lockBtn { background: #006b44; color: white; border: none; padding: 8px 15px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+
+.content { padding: 25px; }
+
+.statsRow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 25px; }
+.statCard { background: white; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; }
+.statCard span { font-size: 0.8rem; color: #64748b; }
+.statCard h3 { margin: 5px 0 0 0; font-size: 1.4rem; }
+
+.floorMap { background: white; border-radius: 20px; padding: 25px; min-height: 600px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.tabs { display: flex; gap: 10px; margin-bottom: 30px; }
+.tabs button { padding: 8px 20px; border-radius: 20px; border: 1px solid #e2e8f0; background: #f8fafc; cursor: pointer; }
+.activeTab { background: #006b44 !important; color: white !important; border: none !important; }
+
+.grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+
+.tableCard { padding: 15px; border-radius: 12px; height: 140px; display: flex; flex-direction: column; justify-content: space-between; border: 2px solid transparent; }
+
+/* Status Colors from image_641c02.png */
+.occupied { background: #00b67a; color: white; }
+.available { border: 2px dashed #00b67a; color: #006b44; background: white; }
+.bill { background: white; border: 2px solid #ef4444; color: #ef4444; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1); }
+
+.tableHeader { display: flex; justify-content: space-between; font-weight: bold; }
+.statusText { margin: 0; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; }
+.details { font-size: 0.7rem; opacity: 0.9; }
+
+.newShiftBtn { position: absolute; bottom: 20px; left: 20px; background: #006b44; color: white; border: none; padding: 12px 25px; border-radius: 8px; font-weight: 600; display: flex; align-items: center; gap: 10px; cursor: pointer; }

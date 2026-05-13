@@ -1,0 +1,127 @@
+.sidebar {
+  width: 260px;
+  background-color: #0b1120;
+  color: #94a3b8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.logoIcon {
+  background-color: #10b981;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.logoTitle {
+  color: white;
+  font-weight: bold;
+}
+.logoSubtitle {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.userCard {
+  background-color: #161d2f;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.userMain {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  background-color: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.userName {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+}
+.userRole {
+  font-size: 11px;
+}
+
+.badge {
+  background-color: #7c3aed;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.magasinSection {
+  margin-top: 15px;
+}
+.magasinLabel {
+  font-size: 10px;
+  color: #475569;
+  display: block;
+  margin-bottom: 5px;
+}
+.magasinBox {
+  border: 1px solid #334155;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.navLinks {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.2s;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.navItem:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: bold;
+  color: #475569;
+  margin: 20px 0 10px 15px;
+  text-transform: uppercase;
+}

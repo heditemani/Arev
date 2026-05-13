@@ -1,0 +1,50 @@
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: #f8fafc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e2e8f0;
+  position: fixed;
+}
+
+.brand { padding: 24px; }
+.logoTitle { color: #0f766e; font-size: 1.25rem; margin: 0; font-weight: 700; }
+.logoSub { color: #64748b; font-size: 0.8rem; margin: 0; }
+
+.nav { padding: 10px; display: flex; flex-direction: column; gap: 4px; }
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.link:hover { background: #f1f5f9; color: #0f172a; }
+
+.active {
+  background: #10b981 !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+.footerNav { margin-top: auto; padding: 10px; border-top: 1px solid #e2e8f0; }
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.userProfile img { width: 32px; height: 32px; border-radius: 50%; }
+.userName { font-size: 0.85rem; font-weight: 600; margin: 0; color: #1e293b; }
+.userRole { font-size: 0.75rem; color: #64748b; margin: 0; }
