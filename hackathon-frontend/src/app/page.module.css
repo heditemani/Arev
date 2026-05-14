@@ -54,8 +54,22 @@
     margin-top: 24px;
 }
 
+
 .remeber_me_section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 5px;
+}
+
+.remeber_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remeber_me input{
+    border-radius: 2px;
+    background-color: transparent;
+    border-color: var(--text-color);
 }
