@@ -23,7 +23,18 @@
 }
 
 .login_form form{
-    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login_form form input{
+    padding: 10px;
+    background-color: var(--background-color-input);
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+
 }
 
 .login_txt{
@@ -40,4 +51,11 @@
 
 .login_form label{
     font-size: 14px;
+    margin-top: 24px;
+}
+
+.remeber_me_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
