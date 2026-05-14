@@ -1,0 +1,43 @@
+.page_container{
+    height: 100vh;
+    background: var(--background-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_container h1{
+    color: var(--text-color) ;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    font-size: 42px;
+}
+
+.login_form{
+    background: var(--background-color-gray);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 750px;
+}
+
+.login_form form{
+    
+}
+
+.login_txt{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.login_form p{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login_form label{
+    font-size: 14px;
+}

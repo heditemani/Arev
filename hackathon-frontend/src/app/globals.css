@@ -3,3 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --background-color: #111315;
+  --white: #fff;
+  --text-color: #FAC1D9;
+  --background-color-gray: #292C2D;
+}
+
+html{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
