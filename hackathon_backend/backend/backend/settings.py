@@ -65,6 +65,8 @@ SIMPLE_JWT = {
 }
 
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Config Cloudinary
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'votre_cloud_name',

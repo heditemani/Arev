@@ -21,6 +21,7 @@ const Produit = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // Thabbet dima mel path hedha kima fil urls.py mta3 el core
   const API_URL = "http://127.0.0.1:8000/api/products/items/";
 
   useEffect(() => {
@@ -31,8 +32,10 @@ const Produit = () => {
         const response = await axios.get(API_URL, {
           headers: { Authorization: `Bearer ${token}` }
         });
-        // Django results handle
-        setProducts(response.data.results || response.data);
+        
+        // Handle Django pagination results or direct array
+        const data = response.data.results || response.data;
+        setProducts(data);
       } catch (error) {
         console.error("Erreur loading data:", error);
       } finally {
@@ -93,14 +96,17 @@ const Produit = () => {
                   <tr key={product.id}>
                     <td className={styles.productCell}>
                       <div className={styles.productImg}>
-                        {product.nom.charAt(0).toUpperCase()}
+                        {product.nom ? product.nom.charAt(0).toUpperCase() : "?"}
                       </div>
                       <span className={styles.productName}>{product.nom}</span>
                     </td>
-                    <td><span className={styles.categoryName}>{product.categorie_name}</span></td>
+                    <td>
+                      <span className={styles.categoryName}>
+                        {product.categorie_name || "Sans catégorie"}
+                      </span>
+                    </td>
                     <td>{Number(product.prix).toFixed(2)} TND</td>
                     
-                    {/* Houni el Stock el wadhah */}
                     <td className={styles.stockCell}>
                       <span className={product.stock === 0 ? styles.outOfStock : styles.inStock}>
                          {product.stock}
@@ -118,8 +124,12 @@ const Produit = () => {
                     </td>
 
                     <td className={styles.actionCell}>
-                      <button className={styles.iconBtn} title="Modifier"><Edit size={16} /></button>
-                      <button className={`${styles.iconBtn} ${styles.delete}`} title="Supprimer"><Trash2 size={16} /></button>
+                      <button className={styles.iconBtn} title="Modifier">
+                        <Edit size={16} />
+                      </button>
+                      <button className={`${styles.iconBtn} ${styles.delete}`} title="Supprimer">
+                        <Trash2 size={16} />
+                      </button>
                     </td>
                   </tr>
                 ))}

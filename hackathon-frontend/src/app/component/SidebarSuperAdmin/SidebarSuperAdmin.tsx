@@ -21,7 +21,7 @@ const SidebarSuperAdmin = () => {
 
   useEffect(() => {
     // Njibou el data mel localStorage
-    const storedUsername = localStorage.getItem("username") || "Super Admin";
+    const storedUsername = localStorage.getItem("username") || "";
     const storedRole = localStorage.getItem("userRole") || "ADMIN";
     
     setUserData({

@@ -95,7 +95,7 @@ export default function Login({ onNavigate }: LocalNavigationProps) {
 
       // 2. Role-Based Redirection
       if (role === "SUPERADMIN") {
-        router.push("/dashboardsuperadmin");
+        router.push("/users");
       } else if (role === "ADMIN") {
         router.push("/dashboardAdmin");
       } else {
