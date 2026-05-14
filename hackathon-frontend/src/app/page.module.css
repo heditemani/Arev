@@ -29,7 +29,7 @@
 }
 
 .login_form form input{
-    padding: 10px;
+    padding: 12px;
     background-color: var(--background-color-input);
     border: none;
     border-radius: 8px;
@@ -66,10 +66,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    gap: 5px;
 }
 
 .remeber_me input{
     border-radius: 2px;
     background-color: transparent;
     border-color: var(--text-color);
+    margin-top: 0 !important;
 }
