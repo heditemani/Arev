@@ -1,8 +1,15 @@
 'use client'
+import { useState } from "react";
 import Link from "next/link"
 import styles from "./page.module.css"
 
 const page = () => {
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+
+
   return (
     <div className={styles.page_container}>
       <h1>Arev</h1>
