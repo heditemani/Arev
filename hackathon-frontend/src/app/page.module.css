@@ -20,11 +20,17 @@
     border-radius: 24px;
     padding: 40px;
     max-width: 750px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 .login_form form{
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    padding: 0 50px;
 
 }
 
@@ -59,7 +65,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.remeber_me_section input{
+
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: var(--text-color);
+    border-width: 2px;
 }
 
 .remeber_me{
@@ -75,4 +91,19 @@
     background-color: transparent;
     border-color: var(--text-color);
     margin-top: 0 !important;
+}
+
+.login_btn {
+    padding: 12px;
+    background-color: var(--text-color) !important;
+    border: none;
+    border-radius: 8px;
+    color: var(--background-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login_btn:hover {
+    background-color: var(--text-color) !important;
+    opacity: 0.8;
 }
